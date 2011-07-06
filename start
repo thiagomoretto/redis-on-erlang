@@ -1,0 +1,5 @@
+#!/opt/local/bin/escript
+
+main(_) ->
+  redis:setup("redis_drv"),
+  redis:call_port("1").
